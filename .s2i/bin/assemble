@@ -2,4 +2,4 @@
 
 source ${STI_SCRIPTS_PATH}/assemble
 
-if !$(grep -q PASSANDO /tmp/src/index.html); then exit 1; done
+if $(grep -q PASSANDO /tmp/src/index.html); then echo "teste passando"; else exit 1; done
